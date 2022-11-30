@@ -21,10 +21,13 @@ const power = function(a,b) {
 };
 
 const factorial = function(a) {
-  for (let i=2; i=a; i++) {
-    i * (i-1)
+  if (a === 0 || a === 1) {
+    return 1
   }
-	
+  for (let i=a-1; i>=1; i--) {
+     a*=i
+  }
+	return a
 };
 
 // Do not edit below this line
